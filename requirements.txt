@@ -1,0 +1,29 @@
+# =========================================================
+# Customer Churn Analytics - Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Toolchain (installed separately, NOT pip packages):
+#   Python      : 3.10.0
+#   Spark       : 4.0.1  (via pyspark below, Scala 2.13 build)
+#   Hadoop      : hadoop-3.0.0 winutils + HADOOP_HOME      (Windows only)
+#   Kafka broker: 4.3.2  (Scala 2.13, KRaft mode)
+# =========================================================
+
+# ---- Member 1: data generation + Kafka producer ----
+# kafka-python is the Python CLIENT. The Kafka BROKER is 4.3.2
+# (installed separately; not a pip package).
+kafka-python==2.0.2
+Faker==24.14.0
+python-dotenv==1.0.1
+
+# ---- alternative Kafka client (pick one, not both) ----
+# confluent-kafka==2.4.0
+
+# ---- MongoDB integration ----
+pymongo==4.7.2
+
+# ---- Utilities ----
+requests==2.32.3
+
+# ---- PySpark ----
+pyspark==4.0.1
