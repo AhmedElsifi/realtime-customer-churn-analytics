@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "Customer",
+  "namespace": "churn.analytics",
+  "fields": [
+    {"name": "customer_id", "type": "string"},
+    {"name": "customer_name", "type": "string"},
+    {"name": "age", "type": "int"},
+    {"name": "gender", "type": "string"},
+    {"name": "location", "type": "string"},
+    {"name": "income_level", "type": "string"},
+    {"name": "signup_date", "type": "string"},
+    {"name": "service_duration_months", "type": "int"},
+    {"name": "contract_type", "type": "string"},
+    {"name": "internet_service", "type": "string"},
+    {"name": "monthly_charges", "type": "double"},
+    {"name": "total_charges", "type": "double"},
+    {"name": "payment_method", "type": "string"},
+    {"name": "calls_count", "type": "int"},
+    {"name": "messages_count", "type": "int"},
+    {"name": "data_usage_gb", "type": "double"},
+    {"name": "purchases_count", "type": "int"},
+    {"name": "purchase_frequency", "type": "double"},
+    {"name": "customer_service_calls", "type": "int"},
+    {"name": "complaints_count", "type": "int"},
+    {"name": "churn_status", "type": "string"},
+    {"name": "churn_date", "type": ["null", "string"], "default": null},
+    {"name": "event_timestamp", "type": "string"}
+  ]
+}
